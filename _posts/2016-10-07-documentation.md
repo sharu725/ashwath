@@ -19,11 +19,11 @@ The theme uses a minimal layout for simplicity. Only the things that matter are 
 **Images:**
 
 Small images will be shown at their actual size.
-![small image](/images/ashwathama-1.jpg)
+![small image]({{site.baseurl}}/images/ashwathama-1.jpg)
 
 
 Large images will always scale down and fit in the content container.
-![large image](/images/lost-1.jpg)
+![large image]({{site.baseurl}}/images/lost-1.jpg)
 
 **Videos:**
 
@@ -47,9 +47,9 @@ Customize the theme as you like by using color schemes!
 
 #### Purple
 
-![Purple jekyll theme](/images/Purple.png){: .shadow}
+![Purple jekyll theme]({{site.baseurl}}/images/Purple.png){: .shadow}
 
-Check [Color Schemes](/color-schemes/){: target="_blank"} for more.
+Check [Color Schemes]({{site.baseurl}}/color-schemes/){: target="_blank"} for more.
 
 
 ### Search Engine Optimized

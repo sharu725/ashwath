@@ -10,29 +10,29 @@ author: ashwathama
 Showing only a few here.
 
 ### Purple
-![Purple](/images/Purple.png){: .shadow}
+![Purple]({{site.baseurl}}/images/Purple.png){: .shadow}
 
 
 
 ### Blood
-![Blood](/images/Blood.png){: .shadow}
+![Blood]({{site.baseurl}}/images/Blood.png){: .shadow}
 
 
 
 ### Emerald
-![Emerald](/images/Emerald.png){: .shadow}
+![Emerald]({{site.baseurl}}/images/Emerald.png){: .shadow}
 
 
 
 ### Mango
-![Mango](/images/Mango.png){: .shadow}
+![Mango]({{site.baseurl}}/images/Mango.png){: .shadow}
 
 ### Turquoise
-![Turquoise](/images/Turquoise.png){: .shadow}
+![Turquoise]({{site.baseurl}}/images/Turquoise.png){: .shadow}
 
 
 ### Flower
-![Flower](/images/Flower.png){: .shadow}
+![Flower]({{site.baseurl}}/images/Flower.png){: .shadow}
 
 
 ## How to change color schemes
@@ -47,7 +47,7 @@ It can be done in the configuration file by changing a variable to yes or no.
 change-date-bg: no
 ```
 
-![Default](/images/Default.png){: .shadow}
+![Default]({{site.baseurl}}/images/Default.png){: .shadow}
 
 
 [Buy Full Version](/about/)
