@@ -1,0 +1,140 @@
+// Main card style
+.post-box {
+    box-shadow: 0 5px 10px -5px #777;
+    -webkit-box-shadow: 0 5px 10px -5px #777;
+    -moz-box-shadow: 0 5px 10px -5px #777;
+    border: 1px solid #eee;
+    border-bottom: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    position: relative;
+    &:hover{
+        box-shadow: 0 7px 10px -4px #777;
+        -webkit-box-shadow: 0 7px 10px -4px #777;
+        -moz-box-shadow: 0 7px 10px -4px #777;
+    }
+    @include media-query($on-palm) {
+        margin-bottom: 20px;
+    }
+}
+
+
+.post-meta {
+    display: inline-block;
+    background: #26A65B; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #26A65B , #2ECC71); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #26A65B , #2ECC71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    padding: 10px 25px;
+    color: $background-color;
+    text-align: center;
+    width: 8%;
+    font-size: 20px;
+    @include media-query($on-laptop) {
+          padding: 12px 15px;
+    }
+    @include media-query($on-palm) {
+            padding: 5px 20px;
+    }
+        @include media-query($on-iphone) {
+            padding: 10px 10px;
+            width: 15%;
+    }
+}
+
+
+.post-title-box{
+    display: inline-block;
+    padding: 0;
+    margin-left: 10px;
+    width: 80%;
+           @include media-query($on-iphone) {
+            width: 70%;
+    }
+}
+
+.post-list {
+    margin:0;
+    padding:0;
+    a {
+        text-decoration: none;
+    }
+}
+
+.post-link {
+    color: lighten($text-color, 10%);
+    text-shadow: 0 0 0.1px;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: -1px;
+       @include media-query($on-laptop) {
+        font-size: 18px;
+    }
+    @include media-query($on-palm) {
+        font-size: 15px;
+    }
+     @include media-query($on-iphone) {
+        font-size: 11px;
+    }
+}
+
+p.post-excerpt {
+    margin: 0;
+    color: $grey-color;
+    @include media-query($on-palm) {
+        font-size: 12px;
+    }
+       @include media-query($on-iphone) {
+        font-size: 10px;
+    }
+}
+
+// Category ribbon style
+.box {
+  width: 200px; height: 300px;
+  position: relative;
+  border: 1px solid #BBB;
+  background: #EEE;
+}
+.ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#2ECC71 0%, #26A65B 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #26A65B;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #26A65B;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #26A65B;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #26A65B;
+}

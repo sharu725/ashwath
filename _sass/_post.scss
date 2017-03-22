@@ -1,0 +1,123 @@
+/* These styles are only meant for individual posts. Keeping pages and posts style separate to speed up the website */
+.post-metadata {
+    font-size: 1em;
+    text-transform: capitalize;
+    @include media-query($on-palm) {
+        font-size: 0.8em;
+    }
+}
+
+.post {
+    margin-bottom: 1em;
+    border-bottom: 1px solid $grey-color-light;
+}
+
+//table
+table {
+  margin: 15px 0;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0; }
+  table tr {
+    border-top: 1px solid $grey-color;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid $grey-color;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid $grey-color;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin: 0; }
+
+
+// Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+    list-style: decimal;
+}
+
+#markdown-toc {
+    border: 1px solid $brand-color;
+    padding: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+}
+
+// Author section
+
+.author {
+    border:none;
+    box-shadow: 0 0 5px #a8a9ab;
+    padding: 20px 15px;
+    margin: 2em 0;
+
+}    
+.author h4, .author p {
+    margin: 0;
+}
+
+.left  {
+    display: inline-block;
+    padding: 25px 11px;
+    text-align: center;
+    @include media-query($on-palm) {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+}
+.right {
+    display: inline-block;
+    padding: 0px 20px;
+     @include media-query($on-palm) {
+        display: block;
+        width: 100%;
+         padding: 10px;
+    }
+}
+
+.author-body {
+   display: flex;
+     @include media-query($on-palm) {
+            display: block;
+    }
+}
+
+.author-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.social p {
+    display: inline-block;
+    padding: 6px;
+    font-size: 90%;
+    &:hover{
+        opacity: 0.8;
+    }
+
+}
+.social a:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,60 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Ashwathama
+description: > # this means to ignore newlines until "baseurl:"
+ Ashwathama is a minimal website with an app like design. It also features card layouts for website elements.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://webjeda.com"
+permalink: :title/
+full-url: "http://ashwathama.s3-website-us-east-1.amazonaws.com/" # the base hostname & protocol for your site
+
+
+# CSS
+sass:
+  style: compressed
+
+# Comments - Go to Disqus.com > sign up > get the short-name > insert it here
+disqus-shortname: 
+
+# Tracker
+analytics: UA-83979019-1
+
+# Form Settings
+#
+# Contact form can be enabled by getting an API key from https://getsimpleform.com/
+simpleform-token: b6d4be9b039b666b3311e1ddcbfb577c
+
+# Redirect users after submitting the form
+redirect-to: http://blog.webjeda.com/thank-you/
+
+# Site version
+version: 0.9
+
+
+# Post date background - This will change the background of the post date and tag ribbon according to the theme. If set to no default green background will be used. If yes then the theme color scheme is used.
+
+change-date-bg: no
+
+
+# Build settings
+markdown: kramdown
+
+include: [_pages] # Includes files inside _pages directory [Do not remove this]
+
+author:
+  name: Ashwathama
+  image: ashwat.jpg # The author image will be shown on the header. Place this image in /images/ folder.
+  about: Ashwathama is a sage who wrote Mahabharatha. He is the son of Drona. He fought on the Kaurava side against the Pandavas. He put up a pretty good fight with mighty Bhima.
+  twitter: webjeda  # https://twitter.com/ is automatically added
+  facebook: webjeda # https://facebook.com/ is automatically added
+  email: hello@webjeda.com # mailto: is automatically added
+  
+gems: 
+  - jekyll-seo-tag
+  - jekyll-paginate

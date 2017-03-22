@@ -1,0 +1,15 @@
+---
+layout: page
+permalink: /code/
+title: Code!
+---
+
+  <div class="post-list">
+    {% for post in site.categories.code %}
+     <a href="{{ post.url | prepend: site.baseurl }}">
+        {% include post-cards.html %}
+      </a>
+    {% endfor %}
+  </div>
+
+

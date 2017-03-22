@@ -1,0 +1,12 @@
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <svg id="i-close" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>
+            </a>
+            
+             <a href="{{site.baseurl}}/"><h2>{{site.title}}</h2></a>
+            {% for my_page in site.pages %}
+                {% if my_page.show-in-menu %}
+                    <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                {% endif %}
+            {% endfor %}      
+            </div>

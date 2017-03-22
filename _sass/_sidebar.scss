@@ -1,0 +1,90 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10%; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    -webkit-box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.39);
+       -moz-box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.39);
+    @include media-query($on-palm) {
+        padding-top: 20%;
+    }
+    
+    h2 {
+        margin: 0;
+    }
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 22px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.1s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #9e9e9e;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: -30px;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.container {
+    position: relative;
+    overflow-y: hidden;
+    border: 1px solid #ddd;
+}
+
+
+.page-link {
+    display: block;
+    padding: 5px 10px;
+    color: $background-color;
+    text-decoration: none;
+
+    border-top: 1px solid #eee;
+    
+    &:last-child {
+        border-bottom: 1px solid #eee;
+    }
+    &:not(:last-child) {
+        margin-right: 0;
+        
+    }
+       &:hover{
+
+        background-color: #fefefe;
+      }
+}
+
+.text-center {
+    text-align: center;
+}

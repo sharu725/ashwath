@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<header class="post-header">
+<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+
+   <p class="post-metadata">
+   <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+       <i class="fa fa-calendar" aria-hidden="true"></i> {{ page.date | date: "%b %-d, %Y" }}
+    </time>
+    
+    {% if page.author %}  &nbsp;&nbsp; 
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><i class="fa fa-user" aria-hidden="true"></i> {{ page.author }}</span></span>{% endif %}
+
+{% if page.categories %}  &nbsp;&nbsp; 
+   <span><i class="fa fa-tag" aria-hidden="true"></i> {% assign tags = page.categories %}{% for tag in tags %}{{tag}}{% unless forloop.last %},&nbsp;{% endunless %}{% endfor %}</span>
+{% endif %}
+
+
+{% assign words = content | strip_html | number_of_words %}
+ &nbsp;&nbsp; 
+   <span><i class="fa fa-clock-o" aria-hidden="true"></i> 
+{% if words < 360 %}
+ 1 min
+{% else %}
+  {{ words | divided_by:180 }} mins
+{% endif %}
+</span>
+</p>
+
+</header>
+<div class="post-content" itemprop="articleBody">{{ content }}</div>
+
+
+</article>
+{% include share.html %}
+
+
+{% if site.disqus-shortname %}
+{% include disqus.html %}
+{% endif %}
+<br />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
