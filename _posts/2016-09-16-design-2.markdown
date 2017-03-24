@@ -17,7 +17,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
 
-![](/images/lost-7.jpg)
+![]({{site.baseurl}}/images/lost-7.jpg)
 
 Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
 

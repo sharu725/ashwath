@@ -9,7 +9,7 @@ author: ashwathama
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 
 
-![](/images/lost-9.jpg)
+![]({{site.baseurl}}/images/lost-9.jpg)
 
 <a href='http://www.freepik.com/free-vector/user-experience-with-web-design-elements_846615.htm'>Designed by Freepik</a>
 

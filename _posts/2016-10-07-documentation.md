@@ -40,7 +40,7 @@ The code is here
 {% raw %}{: .video}{% endraw %}
 {% endhighlight %}
 
-Take a look at [example post](/example/){: target="blank"} to check responsive nature of other elements.
+Take a look at [example post]({{site.baseurl}}/example/){: target="blank"} to check responsive nature of other elements.
 
 ### 20 Color Schemes (full version)!
 Customize the theme as you like by using color schemes!
@@ -81,10 +81,10 @@ Disqus is pre-installed in the theme. You can sign up with Disqus and change the
 Google analytics is also included in the theme. Just insert UA code in the configuration file. If left blank, the code will not run.
 
 ### Built-in Contact Form
-In the [contact](/contact/){: target="_blank"} page, a contact form is included by default. You can make it work by changing the simpleform-token which can be obtained for free from https://getsimpleform.com/
+In the [contact]({{site.baseurl}}/contact/){: target="_blank"} page, a contact form is included by default. You can make it work by changing the simpleform-token which can be obtained for free from https://getsimpleform.com/
 
 ### Syntax Highlighting
-Syntax highlighting is done by rouge. Check [example post](/example/){: target="_blank"}.
+Syntax highlighting is done by rouge. Check [example post]({{site.baseurl}}/example/){: target="_blank"}.
 
 ### Dynamic RSS Feed
 RSS feed is generated dynamically as and when you add posts and pages.
