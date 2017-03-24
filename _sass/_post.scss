@@ -2,6 +2,7 @@
 .post-metadata {
     font-size: 1em;
     text-transform: capitalize;
+    color: lighten($text-color, 30%);
     @include media-query($on-palm) {
         font-size: 0.8em;
     }

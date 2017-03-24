@@ -57,6 +57,12 @@
 .author-image {
     border-radius: 50%;
     margin-top: 30px;
+    height: 100px;
+    width: 100px;
+    @include media-query($on-palm) {
+        height: 70px;
+        width: 70px;
+    }
 }
 
 .author-about {
