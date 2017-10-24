@@ -50,7 +50,7 @@ change-date-bg: no
 ![Default]({{site.baseurl}}/images/Default.png){: .shadow}
 
 
-[Buy Full Version](/about/)
+[Buy Full Version]({{site.baseurl}}/about/)
 
 
 <style>.shadow{
