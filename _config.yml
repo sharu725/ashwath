@@ -10,7 +10,7 @@ title: Ashwathama
 description: > # this means to ignore newlines until "baseurl:"
  Ashwathama is a minimal website with an app like design. It also features card layouts for website elements.
 baseurl: "/ashwath" # the subpath of your site, e.g. /blog
-url: "http://webjeda.com/ashwath/"
+url: "http://qudgns200.github.io/"
 permalink: :title/
 full-url: "http://webjeda.com/ashwathama/" # the base hostname & protocol for your site
 
