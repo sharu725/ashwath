@@ -15,7 +15,7 @@ author: PaulLee
 
 ### 1. 변수에 함수를 담을 경우
 
-```c
+```
  function func() {
  	alert("func 호출");
 	
@@ -95,34 +95,39 @@ var obj = {
 		나이 : '29',
 		직업 : '백수'
 };
-
-alert(obj.이름); // '.' 은 자동완성 가능
-alert('이름' in obj); //obj 객체 내의 이름의 값이 있는지 boolean 값을 리턴
+alert(obj.이름); 
+alert('이름' in obj);
 ```
+obj.이름 :  '.' 은 자동완성 가능
+'이름' in obj : obj 객체 내의 이름의 값이 있는지 boolean 값을 리턴
 
 ```c
-// var student = [];
-// student.name = "Paul";
-// student.age = 20;
-// student.toString = function() {
-// 	var output = '';
-// 	output += '이름 : ' + this.name + '\n';
-// 	output += '나이 : ' + this.age;
-// 	return output;
-// }
-
-// alert(student.toString()); //저장된 output 문자열을 출력
-// delete(student.age); //객체의 속성을 삭제
-// alert(student); //자바에서처럼 toString 안쓰고 alert에 객체를 대입 시 toStiring 해줌
+ var student = [];
+ student.name = "Paul";
+ student.age = 20;
+ student.toString = function() {
+ 	var output = '';
+ 	output += '이름 : ' + this.name + '\n';
+ 	output += '나이 : ' + this.age;
+ 	return output;
+ }
+ alert(student.toString());
+ delete(student.age);
+ alert(student); 
 ```
+ alert(student.toString()) : 저장된 output 문자열을 출력
+ delete(student.age) : 객체의 속성을 삭제
+ alert(student) : 자바에서처럼 toString 안쓰고 alert에 객체를 대입 시 toStiring 해줌
+
+
 ```c
 function makeStudent(n, k, e, m) {
-	
 	b = 20; 
 	n = 'Lee'; 
-	this.n = 'Lee' 
+	this.n = 'Lee';
     }
-    ```
+```
+
 1. b = 20;
 	**함수 내부에 b라는 변수가 없으므로 암시적으로 전역변수 b를 생성**
 
@@ -135,6 +140,7 @@ function makeStudent(n, k, e, m) {
 >> 자바스크립트에서의 최상위 객체 : window
 
 ##### 생성자
+
 ```c
 function Student(name, kor, eng, math) {
 	this.name = name;
@@ -144,7 +150,8 @@ function Student(name, kor, eng, math) {
 	this.getSum = function() {
 		return this.kor + this.eng + this.math;
 	}
-} 
+}; 
 var s = new Student('Paul', 100, 100, 100);
 ```
+
 **생성자로써 만든 함수 : 현재 객체가 아닌 새로운 객체를 만들어서 새로운 객체 내부에서 함수를 수행, 그리고 새로운 객체 리턴**
