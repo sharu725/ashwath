@@ -8,7 +8,7 @@ title:  20180705 AJAX_jQuery
 
 description: This is things that I learned. These are about AJAX and jQuery.
 
-categories: javascript
+categories: jQuery
 
 date: 2018-07-05
 

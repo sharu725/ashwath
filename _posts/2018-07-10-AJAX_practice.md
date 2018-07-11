@@ -8,7 +8,7 @@ title:  20180710 AJAX_practice
 
 description: This is document that I program with Ajax.
 
-categories: javascript
+categories: Ajax
 
 date: 2018-07-10
 
