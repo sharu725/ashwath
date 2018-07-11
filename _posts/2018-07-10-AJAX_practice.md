@@ -4,7 +4,7 @@
 
 layout: post
 
-title:  20180710 AJAX_practice
+title:  20180710 Ajax_practice
 
 description: This is document that I program with Ajax.
 

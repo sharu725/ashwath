@@ -4,7 +4,7 @@
 
 layout: post
 
-title:  20180705 AJAX_jQuery
+title:  20180705 Ajax_jQuery
 
 description: This is things that I learned. These are about AJAX and jQuery.
 
