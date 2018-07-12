@@ -1,10 +1,9 @@
 ---
-
 layout: post
-title:  20180625 javascript_1
-description: This is things that I learned. These are basic content about javascript.
+title:  20180625 Javascript_1
+description: This is things that I learned. These are basic content about Javascript.
              (type, function)
-categories: javascript
+categories: Javascript
 date: 2018-06-25
 author: PaulLee
 

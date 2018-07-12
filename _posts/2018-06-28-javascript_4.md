@@ -1,10 +1,9 @@
 ---
-
 layout: post
-title:  20180628 javascript_4
+title:  20180628 Javascript_4
 description: This is things that I learned. These are basic content about javascript.
              (Element, Trigger, regular expression)
-categories: javascript
+categories: Javascript
 date: 2018-06-28
 author: PaulLee
 
@@ -35,7 +34,6 @@ author: PaulLee
 ```
 - **이벤트 수행 함수에서의 this는 이벤트가 발생한 객체**
 
-
 ***
 
 ### 3. Trigger
@@ -50,7 +48,6 @@ author: PaulLee
 	}
 ```
 - btn1 클릭 이벤트 수행 시 counter1의 숫자 증가가 같이 수행
-
 
 ***
 
@@ -92,7 +89,7 @@ author: PaulLee
 ```
 	- 총알을 다 쓰고 리로드 할 시 필요할 듯 하다!!
 	- eventListener 제거 : removeEventListner(이벤트명, 변수명);
-	 
+
 ***
 
 ### 5. 정규표현식

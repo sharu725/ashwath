@@ -1,10 +1,9 @@
 ---
-
 layout: post
-title:  20180625 javascript_2
-description: This is things that I learned. These are basic content about javascript.
+title:  20180625 Javascript_2
+description: This is things that I learned. These are basic content about Javascript.
              (function, Object)
-categories: javascript
+categories: Javascript
 date: 2018-06-26
 author: PaulLee
 
@@ -32,7 +31,6 @@ author: PaulLee
  - 변수에 함수를 담을 시 () 가 없으면 소스코드 자체가 변수에 담김
    () 가 있으면 담긴 함수를 실행
  - **func()(); //메소드 체인 기법(내부 함수 호출)**
-
 
 ***
 ### 2. 클로저
@@ -66,10 +64,10 @@ b();
 
 	◆ escape <--> unescape => 적절한 정도로 인코딩
 	◆ 영문 알파벳, 숫자, 일부 특수문자를 제외한 모든 문자를 인코딩
-
+	
 	◆ encodeURI <--> decodeURI => 최소한의 문자만 인코딩
 	◆ escape에서 인터넷 주소에 사용되는 일부 특수문자는 변환하지 않음
-
+	
 	◆ encodeURIComponent <--> decodeURIComponent => 대부분의 문자를 인코딩
 	◆ 알파벳과 숫자를 제외한 모든 문자를 인코딩
 	◆ UTF-8인 코딩과 같음 
@@ -133,10 +131,10 @@ function makeStudent(n, k, e, m) {
 
 2. n = 'Lee';
 	**함수 내부에 매개변수 n이 있으므로 지역변수 n에 'Lee'를 대입**
-    
+   
 3. this.n = 'Lee'
 	**this 키워드가 붙어있으므로 지역변수 n이 아니라 자기가 속해있는 객체의 속성(window 객체)**
- 
+
 >> 자바스크립트에서의 최상위 객체 : window
 
 ##### 생성자

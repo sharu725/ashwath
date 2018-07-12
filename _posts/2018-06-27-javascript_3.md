@@ -1,10 +1,9 @@
 ---
-
 layout: post
-title:  20180627 javascript_3
-description: This is things that I learned. These are basic content about javascript.
+title:  20180627 Javascript_3
+description: This is things that I learned. These are basic content about Javascript.
              (window, Element)
-categories: javascript
+categories: Javascript
 date: 2018-06-27
 author: PaulLee
 
@@ -51,7 +50,7 @@ alert의 우선순위가 setTimeout 보다 높기 때문
 window.onload = function() {
 	var hello = document.getElementById('hello'); 
 ```
-    
+
 - window.onload : 소스를 다 읽고 실행
 - document.getElementById(ID명)
    : html에서 element(요소)를 찾아와 ID값에 담음
