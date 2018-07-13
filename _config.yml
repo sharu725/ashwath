@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Ashwathama
+title: Paul's blog
 description: > # this means to ignore newlines until "baseurl:"
- Ashwathama is a minimal website with an app like design. It also features card layouts for website elements.
-baseurl: "/ashwath" # the subpath of your site, e.g. /blog
-url: "http://webjeda.com/ashwath/"
+
+baseurl: 
+url: "http://qudgns200.github.io/"
 permalink: :title/
-full-url: "http://webjeda.com/ashwathama/" # the base hostname & protocol for your site
+full-url: "http://qudgns200.github.io/" # the base hostname & protocol for your site
 
 
 # CSS
@@ -31,7 +31,7 @@ analytics: UA-83979019-1
 simpleform-token: b6d4be9b039b666b3311e1ddcbfb577c
 
 # Redirect users after submitting the form
-redirect-to: http://blog.webjeda.com/thank-you/
+redirect-to: http://qudgns200.github.io/
 
 # Site version
 version: 0.9
@@ -48,12 +48,12 @@ markdown: kramdown
 include: [_pages] # Includes files inside _pages directory [Do not remove this]
 
 author:
-  name: Ashwathama
+  name: Paul Lee
   image: ashwat.jpg # The author image will be shown on the header. Place this image in /images/ folder.
-  about: Ashwathama is a sage who wrote Mahabharatha. He is the son of Drona. He fought on the Kaurava side against the Pandavas. He put up a pretty good fight with mighty Bhima.
-  twitter: webjeda  # https://twitter.com/ is automatically added
-  facebook: webjeda # https://facebook.com/ is automatically added
-  email: hello@webjeda.com # mailto: is automatically added
+  about: 
+  twitter: 
+  facebook: 
+  email: qudgns200@gmail.com
   
 gems: 
   - jekyll-seo-tag
